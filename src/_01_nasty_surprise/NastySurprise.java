@@ -21,6 +21,7 @@ public class NastySurprise implements ActionListener {
 	}
 	void createUI() {
 		JFrame f=new JFrame();
+		f.setVisible(true);
 		JPanel p=new JPanel();
 		f.add(p);
 		p.add(b);
@@ -36,7 +37,10 @@ public class NastySurprise implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		if(e.getSource()==b) {
-			
+			showPictureFromTheInternet("http://cdn.akc.org/content/article-body-image/siberian_husky_cute_puppies.jpg");
+		}
+		else if(e.getSource()==b1) {
+			showPictureFromTheInternet("https://www.biography.com/.image/t_share/MTY2NjgyOTkyNTMyNTMwMjMx/gettyimages-2637237.jpg");
 		}
 	}
 	private void showPictureFromTheInternet(String imageUrl) {
