@@ -60,7 +60,7 @@ public class SlotMachine implements ActionListener {
 		}
 		if(new Random().nextInt(3)==1) {
 			try {
-				p.add(createLabelImage("recipe.jpg"));
+				p.add(createLabelImage("cherry.jpg"));
 				c+=1;
 			} catch (MalformedURLException e1) {
 				// TODO Auto-generated catch block
